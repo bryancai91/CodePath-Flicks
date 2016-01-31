@@ -41,6 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 1. Was out of town from Thursday to Monday of the week, which was when I was supposed to get most of the work done.
+2. Imgur isn't working well
 
 ## License
 
