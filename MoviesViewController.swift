@@ -53,8 +53,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            print("response: \(responseDictionary)")
-                            
                             self.movies = responseDictionary["results"] as! [NSDictionary]
                             self.tableView.reloadData()
                             
@@ -97,9 +95,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.overviewLabel.text = overview
         cell.posterView.setImageWithURL(imageURL!)
         
-
-        
-        print("row \(indexPath.row)")
         return cell
     }
     
@@ -131,8 +126,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            print("response: \(responseDictionary)")
-                            
                             self.movies = responseDictionary["results"] as! [NSDictionary]
                             self.tableView.reloadData()
                             
